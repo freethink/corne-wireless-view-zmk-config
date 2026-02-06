@@ -10,70 +10,15 @@
 
 / {
     behaviors {
-        hm_s: hm_s {
+        hm: hm {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM_S";
+            label = "HM";
             #binding-cells = <2>;
 
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
 
-            bindings = <&kp S>, <&kp LCTRL>;
-        };
-
-        hm_d: hm_d {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_D";
-            #binding-cells = <2>;
-
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-
-            bindings = <&kp D>, <&kp LALT>;
-        };
-
-        hm_f: hm_f {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_F";
-            #binding-cells = <2>;
-
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-
-            bindings = <&kp F>, <&kp LGUI>;
-        };
-
-        hm_j: hm_j {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_J";
-            #binding-cells = <2>;
-
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-
-            bindings = <&kp J>, <&kp RGUI>;
-        };
-
-        hm_k: hm_k {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_K";
-            #binding-cells = <2>;
-
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-
-            bindings = <&kp K>, <&kp RALT>;
-        };
-
-        hm_l: hm_l {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_L";
-            #binding-cells = <2>;
-
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-
-            bindings = <&kp L>, <&kp RCTRL>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -90,7 +35,7 @@
             display-name = "Base";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp CAPS   &kp A  &hm_s  &hm_d     &hm_f  &kp G        &kp H      &hm_j  &hm_k      &hm_l    &kp SEMI  &kp SQT
+&kp CAPS   &kp A  &hm LCTRL S  &hm LALT D     &hm LGUI F  &kp G        &kp H      &hm RGUI J  &hm RALT K      &hm RCTRL L    &kp SEMI  &kp SQT
 // &kp CAPS   &kp A  &kp S  &kp D     &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                          &kp LGUI  &mo 1  &kp ENTER    &kp SPACE  &mo 2  &kp RALT
