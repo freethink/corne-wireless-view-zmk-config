@@ -9,14 +9,14 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
+behaviors {
         hm_s: hm_s {
             compatible = "zmk,behavior-hold-tap";
             label = "HM_S";
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp S>, <&kp LCTRL>;
+            bindings = <&kp S &kp LCTRL>;
         };
 
         hm_d: hm_d {
@@ -25,7 +25,7 @@
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp D>, <&kp LALT>;
+            bindings = <&kp D &kp LALT>;
         };
 
         hm_f: hm_f {
@@ -34,7 +34,7 @@
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp F>, <&kp LGUI>;
+            bindings = <&kp F &kp LGUI>;
         };
 
         hm_j: hm_j {
@@ -43,7 +43,7 @@
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp J>, <&kp RGUI>;
+            bindings = <&kp J &kp RGUI>;
         };
 
         hm_k: hm_k {
@@ -52,7 +52,7 @@
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp K>, <&kp RALT>;
+            bindings = <&kp K &kp RALT>;
         };
 
         hm_l: hm_l {
@@ -61,7 +61,7 @@
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp L>, <&kp RCTRL>;
+            bindings = <&kp L &kp RCTRL>;
         };
     };
 
