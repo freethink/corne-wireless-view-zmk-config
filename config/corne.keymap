@@ -22,6 +22,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_ctrl {
+            timeout-ms = <100>;
+            key-positions = <24 35>;
+            bindings = <&kp LCTRL>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
